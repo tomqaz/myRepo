@@ -1,7 +1,7 @@
 class TextDrawer:
-	def setFont(self, font):
-		self.font = font
-			
+    def setFont(self, font):
+        self.font = font
+
     def draw(self, text):
         firstLetter = self.font.letters[text[0].upper()]
         drawing = splitLetter(firstLetter)
