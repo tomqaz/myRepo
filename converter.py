@@ -8,10 +8,9 @@ def main():
 	drawer.setFont(font)
 	drawer.draw(text)
 
+
 def getText():
-	return 'Git'
-
-
+    return sys.argv[0]
 
 
 if __name__ == '__main__':
