@@ -10,6 +10,10 @@ def main():
 
 
 def getText():
+    if len(sys.argv) != 2:
+        print "Bad arguments"
+        sys.exit(1)
+
     return sys.argv[0]
 
 
