@@ -3,8 +3,15 @@ class TextDrawer:
 		self.font = font
 			
     def draw(self, text):
-            for character in text:
-                print self.font.letters[character.upper()]
+        firstLetter = self.font.letters[text[0].upper()]
+        drawing = splitLetter(firstLetter)
+
+        for character in text[1:]:
+             letter = splitLetter(self.font.letters[character.upper()])
+             drawing = appendLetter(drawing, letter)
+
+        for line in drawing:
+             print line
 
     def splitLetter(letter):
         return letter.split('\n')
